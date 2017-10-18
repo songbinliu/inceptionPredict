@@ -113,6 +113,7 @@ func loadLabels(fname string) ([]string, error) {
 }
 
 func (m *TfModel) PredictTopkFile(fname string, k int) {
+	glog.V(2).Infof("Begin to predict data from file %v", fname)
 	bytes, err := ioutil.ReadFile(fname)
 	if err != nil {
 		glog.Errorf("failed to read image file %v: %v", fname, err)

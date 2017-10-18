@@ -2,7 +2,7 @@
 
 # make build
 
-input="./imgs/tiger.jpg"
+input="./imgs/dog.jpg"
 options="--v=2 --logtostderr"
 options="$options --modeldir=./model-data/inception/"
 options="$options --imgfile=$input" 
